@@ -11,7 +11,7 @@ function List(props) {
   return (
     <li>
         {edit ? (<>
-            <textarea className='editTast' value={text} onChange={(e) => settext(e.target.value)}/>
+            <textarea className='editTask' value={text} onChange={(e) => settext(e.target.value)}/>
             <button className='saveTask' onClick={savetask}>SAVE</button>  
             </>):(props.text)}
                 <button onClick={() => props.deleteTodo(props.Listindex)}>DELETE</button>
